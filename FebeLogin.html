@@ -5,7 +5,7 @@
        <title>Febe/login</title>
        <style>
          #febeText{position: absolute;
-                   left: 496px;
+                    left: 496px;
                     top:  70px; }
 
          h2{font-family: Arial; 
@@ -14,21 +14,95 @@
             color: white; 
             text-align: left;
             position: absolute;
-            left: 532px;
+             left: 532px;
              top: 200px;
             }
          
          form{background-color: rgba(216,216,216,0.88);
+              border-radius:8px;
               height: 237px;
                width: 377px;
               position: absolute;
-              left: 532px;
+               left: 532px;
                top: 320px;}
          
          #logInLabel{font-family: Arial; 
                      font-size: 36px; 
                      font-weight: bold; 
-                     color: black;}
+                     color: black;
+                     position: absolute;
+                      left: 135px;
+                      top: 10px;}
+         
+         #userName{height: 53px;
+                   width: 219px;
+                   border-style: solid; border-color: #979797;
+                   border-top-right-radius: 8px;
+                   border-bottom-right-radius: 8px;
+                   position: absolute;
+                    left: 105px;
+                    top: 63px;
+         }
+
+         #userNameSignContainer{background-color: white;
+                        height: 53px;
+                         width: 47px;
+                         border-style: solid;
+                         border-color: #979797;
+                         border-top-left-radius: 8px;
+                         border-bottom-left-radius: 8px;
+                         position: absolute;
+                          left: 54px;
+                          top: 63px;
+         }
+
+         #userSign{ position: absolute;
+                        left: 596px;
+                         top: 395px;
+
+         }
+
+         #userPassword{height: 53px;
+                       width: 219px;
+                       border-style: solid; border-color: #979797;
+                       border-top-right-radius: 8px;
+                       border-bottom-right-radius: 8px;
+                       position: absolute;
+                        left: 105px;
+                        top: 122px;
+         }
+
+         #userPasswordSignContainer{background-color: white;
+                         height: 53px;
+                         width: 47px;
+                         border-style: solid; border-color: #979797;
+                         border-top-left-radius: 8px;
+                         border-bottom-left-radius: 8px;
+                         position: absolute;
+                          left: 54px;
+                          top: 122px;
+         }
+
+         #passwordSign{position: absolute;
+                        left: 601px;
+                         top: 449px;
+         }
+
+         #signInButton{color:white;
+                       font-family: Arial; 
+                       font-size: 24px; 
+                       text-align: center;
+                       background-color:#4A90E2;
+                       height: 34px;
+                       width: 112px;
+                       border-style: solid;
+                       border-color: #979797;
+                       border-radius: 8px;
+                       position: absolute;
+                        left: 128px;
+                        top: 190px;
+
+         }
 
 
       
@@ -37,13 +111,15 @@
    <body background="/Users/chengyihao/Desktop/工程資訊管理/Febe_WebPage_Github/photo/x17460002.png" >
    	 <h2>an Autonomous Crack Detection <br> System for Bridge Inspection</h2>
      <img src="/Users/chengyihao/Desktop/工程資訊管理/Febe_WebPage_Github/photo/Febetext.png" id="febeText" >
-     <img src="/Users/chengyihao/Desktop/工程資訊管理/Febe_WebPage_Github/photo/userSign.png" >
-     <img src="/Users/chengyihao/Desktop/工程資訊管理/Febe_WebPage_Github/photo/passwordSign.png" >
      <form name="loginForm" > 
        <label id="logInLabel" >Login</label><br>
-       <input type="text" name= "userName" id="userName" size ="53"><br>
-       <input type="password" name= "userPassword" id="userPassword" size= "53"><br>
+       <input type="text" style="font-size:30px" name= "userName" id="userName" size ="53">
+       <div id="userNameSignContainer"></div><br>
+       <input type="password" style="font-size:30px" name= "userPassword" id="userPassword" size= "53">
+       <div id="userPasswordSignContainer"></div><br>
        <input type="submit" name= "signInButton" id="signInButton" value="Sing in" >
      </form>
+     <img src="/Users/chengyihao/Desktop/工程資訊管理/Febe_WebPage_Github/photo/userSign.png" id="userSign">
+     <img src="/Users/chengyihao/Desktop/工程資訊管理/Febe_WebPage_Github/photo/passwordSign.png" id="passwordSign">
    </body>
 </html>
