@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+  <head>
+     <meta charset="utf-8">
+     <title>Project</title>
+     <style>
+     div.navigationArea{background-color: rgba(216,216,216,0.6);
+     	               width: 378px;
+     	               height: 773px;
+     	             position: absolute;
+     	               left:105px;
+     	               top: 40px;
+     }
+     img.navigationArea{position: absolute;
+     	               left:200px;
+     	               top: 89.02px;
+     }
+     hr.navigationArea{ position: absolute;
+     	               left:200px;
+     	               top: 170px;
+                      height: 2px;
+                      width: 188px;
+                     background-color: black;
+     }
+     
+    #checkAreaForm{width:  354px;
+    	           height: 254px;
+    	           position: absolute;
+     	               left:753px;
+     	               top: 582px;
+    }
+
+     #crackCheckForm{background-color: rgba(216,216,216,0.6);
+                     border-radius:8px;
+                      width: 255px;
+                     height: 39px;
+                     position: absolute;
+     	               left:55px;
+     	               top: 8px;
+     }
+
+     #commentForm{background-color: rgba(216,216,216,0.6);
+                  border-radius:8px;
+                   width: 255px;
+                  height: 126px;
+                  position: absolute;
+     	            left:56px;
+     	            top: 58px;
+     }
+
+     #crackCheckFormLabel{font-family: Arial; 
+                          font-size: 18px; 
+                          position: absolute;
+                            left:70px;
+                            top:  18px;
+
+
+     }
+
+     #commentFormLabel{font-family: Arial; 
+                       font-size: 18px; 
+                       position: absolute;
+                         left:70px;
+                         top: 68px;
+     }
+
+     label#crackCheckYes{font-size: 18px; 
+                   	 position: absolute;
+                       left:148px;
+                       top: 18px;
+     }
+     input#crackCheckYes{font-size: 18px; 
+                   	 position: absolute;
+                       left:169px;
+                       top: 18px;
+     }
+
+     label#crackCheckNo{font-size: 18px; 
+                   	 position: absolute;
+                       left:204px;
+                       top: 18px;
+     }
+     input#crackCheckNo{font-size: 18px; 
+                   	 position: absolute;
+                       left:225px;
+                       top: 18px;
+     }
+
+     #commentFormTextarea{ position: absolute;
+                       left:109px;
+                       top: 69px;
+     }
+     
+     #submitButton{color:white;
+                       font-family: Arial; 
+                       font-size: 20px; 
+                       text-align: center;
+                       background-color:black;
+                       height: 39px;
+                       width: 128px;
+                       border-style: solid;
+                       border-radius: 8px;
+                       position: absolute;
+                        left: 128px;
+                        top: 192px;
+     }
+
+     #seperationLine{position: absolute;
+                     left: 556px;
+                     top: 564px;
+                     width: 779px;
+                     height: 2px;
+                     background-color: black;
+     }
+
+     #triangleToLeft{border-top: 18px solid white;
+                     border-right: 18px solid #4A4A4A;
+                     border-bottom: 18px solid white;
+                     display: inline-block;
+                     position: absolute;
+                      left:555px;
+                      top:500px;
+     }
+
+     #triangleToRight{border-top: 18px solid white;
+                      border-left: 18px solid #4A4A4A;
+                      border-bottom: 18px solid white;
+                      display: inline-block;
+                      position: absolute;
+                      left:1305px;
+                      top:500px;
+     }
+     
+
+     </style>
+
+
+  </head>
+
+  <body>
+    
+    <div > 
+      <div class="navigationArea"></div>
+      <img class="navigationArea" src="/Users/chengyihao/Desktop/工程資訊管理/Febe_WebPage_Github/photo/Content_Febetext.png">
+      <hr class="navigationArea" >
+    </div>
+
+    <div>
+      <form id="checkAreaForm">
+        
+        <div id="crackCheckForm"> </div>
+        <label id="crackCheckFormLabel">裂縫</label>
+        <label id="crackCheckYes">是</label>
+        <input type="radio" name="crackCheck" value="isCrack" id="crackCheckYes"> 
+        <label id="crackCheckNo">否</label>
+        <input type="radio" name="crackCheck" value="nonCrack" id="crackCheckNo">
+      
+        <div class="checkArea" id="commentForm"></div>
+      	<label id="commentFormLabel">備註</label>
+        <textarea cols="22" rows="7" id="commentFormTextarea"></textarea> 
+
+        <input type="submit" name= "submitButton" id="submitButton" value="Submit" >
+
+      </form>
+    </div>
+    <hr id="seperationLine">
+    <div id= "triangleToLeft"></div>
+    <div id= "triangleToRight"></div>
+
+
+
+
+  </body>
+
+</html>
