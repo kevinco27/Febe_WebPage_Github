@@ -1,10 +1,16 @@
 <!doctype html>
 <html>
   <head>
+     <script type="text/javascript" src="javascript/jquery-1.11.3.js"></script>
+     <link href="collapsible menu/styles.css" rel="stylesheet" type="text/css" />
+     <script type="text/javascript" src='collapsible menu/script.js'></script>
+     <link href="imageSlider/CSS/style_tut.css" rel="stylesheet" type="text/css">
+     <script src="imageSlider/js/alert_tut.js"></script> 
+
      <meta charset="utf-8">
      <title>Project</title>
      <style>
-     div.navigationArea{background-color: rgba(216,216,216,0.6);
+     div.navigationArea{background-color: rgba(232,232,232,1);
      	               width: 378px;
      	               height: 773px;
      	             position: absolute;
@@ -22,12 +28,18 @@
                       width: 188px;
                      background-color: black;
      }
+     #cssmenu{
+        position: absolute;
+        left:170px;
+        top:219px;
+     }
      
     #checkAreaForm{width:  354px;
-    	           height: 254px;
+    	           height: 300px;
     	           position: absolute;
      	               left:753px;
-     	               top: 582px;
+     	               top: 520px;
+                     
     }
 
      #crackCheckForm{background-color: rgba(216,216,216,0.6);
@@ -36,7 +48,7 @@
                      height: 39px;
                      position: absolute;
      	               left:55px;
-     	               top: 8px;
+     	               top: 38px;
      }
 
      #commentForm{background-color: rgba(216,216,216,0.6);
@@ -45,14 +57,14 @@
                   height: 126px;
                   position: absolute;
      	            left:56px;
-     	            top: 58px;
+     	            top: 98px;
      }
 
      #crackCheckFormLabel{font-family: Arial; 
                           font-size: 18px; 
                           position: absolute;
                             left:70px;
-                            top:  18px;
+                            top:  48px;
 
 
      }
@@ -61,34 +73,34 @@
                        font-size: 18px; 
                        position: absolute;
                          left:70px;
-                         top: 68px;
+                         top: 108px;
      }
 
      label#crackCheckYes{font-size: 18px; 
                    	 position: absolute;
                        left:148px;
-                       top: 18px;
+                       top: 48px;
      }
      input#crackCheckYes{font-size: 18px; 
                    	 position: absolute;
                        left:169px;
-                       top: 18px;
+                       top: 48px;
      }
 
      label#crackCheckNo{font-size: 18px; 
                    	 position: absolute;
                        left:204px;
-                       top: 18px;
+                       top: 48px;
      }
      input#crackCheckNo{font-size: 18px; 
                    	 position: absolute;
                        left:225px;
-                       top: 18px;
+                       top: 48px;
      }
 
      #commentFormTextarea{ position: absolute;
                        left:109px;
-                       top: 69px;
+                       top: 109px;
      }
      
      #submitButton{color:white;
@@ -102,33 +114,22 @@
                        border-radius: 8px;
                        position: absolute;
                         left: 128px;
-                        top: 192px;
+                        top: 250px;
      }
 
      #seperationLine{position: absolute;
-                     left: 556px;
-                     top: 564px;
-                     width: 779px;
+                     left: 547px;
+                     top: 525px;
+                     width: 795px;
                      height: 2px;
                      background-color: black;
      }
-
-     #triangleToLeft{border-top: 18px solid white;
-                     border-right: 18px solid #4A4A4A;
-                     border-bottom: 18px solid white;
-                     display: inline-block;
-                     position: absolute;
-                      left:555px;
-                      top:500px;
-     }
-
-     #triangleToRight{border-top: 18px solid white;
-                      border-left: 18px solid #4A4A4A;
-                      border-bottom: 18px solid white;
-                      display: inline-block;
-                      position: absolute;
-                      left:1305px;
-                      top:500px;
+     
+     #slider{position: absolute;
+             left:548px;
+             top:-10px;
+             height:449px;
+             width: 795px;
      }
      
 
@@ -139,11 +140,36 @@
 
   <body>
     
+
     <div > 
       <div class="navigationArea"></div>
-      <img class="navigationArea" src="/Users/chengyihao/Desktop/工程資訊管理/Febe_WebPage_Github/photo/Content_Febetext.png">
+      <img class="navigationArea" src="photo/Content_Febetext.png">
       <hr class="navigationArea" >
     </div>
+
+    <div id='cssmenu'>
+<ul>
+   <li class='has-sub'><a href='#'><span>北部</span></a>
+      <ul>
+         <li><a href='#'><span>104.01.15 中興橋</span></a></li>
+         <li><a href='#'><span>104.01.15 中興橋</span></a></li>
+         <li class='last'><a href='#'><span>104.01.15 中興橋</span></a></li>
+      </ul>
+   </li>
+   <li class='has-sub'><a href='#'><span>中部</span></a>
+      <ul>
+         <li><a href='#'><span>104.01.15 中興橋</span></a></li>
+         <li class='last'><a href='#'><span>104.01.15 中興橋</span></a></li>
+      </ul>
+   </li>
+   <li class='has-sub'><a href='#'><span>南部</span></a>
+      <ul>
+         <li><a href='#'><span>104.01.15 中興橋</span></a></li>
+         <li class='last'><a href='#'><span>104.01.15 中興橋 </span></a></li>
+      </ul>
+   </li>
+</ul>
+</div>
 
     <div>
       <form id="checkAreaForm">
@@ -164,8 +190,12 @@
       </form>
     </div>
     <hr id="seperationLine">
-    <div id= "triangleToLeft"></div>
-    <div id= "triangleToRight"></div>
+
+   <div id="slider">
+    <img src="imageSlider/Images/img1.jpg" id="image" >
+    <div class="left_hold"><img onClick="photo(-1)" class="left" src="imageSlider/Images/arrow_left.png"></div>
+    <div class="right_hold"><img onClick="photo(1)" class="right" src="imageSlider/Images/arrow_right.png"></div>
+   </div>
 
 
 
